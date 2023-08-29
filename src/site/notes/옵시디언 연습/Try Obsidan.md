@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//try-obsidan/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"//try-obsidan/"}
 ---
 
 
