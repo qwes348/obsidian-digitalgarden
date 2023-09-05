@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/nfinity7//api/"}
+{"dg-publish":true,"permalink":"/nfinity7//api/","dgPassFrontmatter":true}
 ---
 
 ____
