@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/nfinity7//index/"}
+{"dg-publish":true,"permalink":"/nfinity7//index/","dgPassFrontmatter":true}
 ---
 
 # 🐈코이네코 Overview
