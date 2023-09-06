@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🏢Nfinity7/🐈코이네코/🍎iOS + 구글Ads 전환(이벤트) 보내는법 탐색/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/🏢Nfinity7/🐈코이네코/🍎iOS + 구글Ads 전환(이벤트) 보내는법 탐색/"}
 ---
 
 ----
