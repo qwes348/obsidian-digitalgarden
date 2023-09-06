@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/✏️Obsidian 사용법/(펌)옵시디언 Git 안드로이드 동기화/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/✏️Obsidian 사용법/(펌)옵시디언 Git 안드로이드 동기화/"}
 ---
 
 # How to sync Obsidian with Git on Android
