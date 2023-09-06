@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🏢Nfinity7/🐈코이네코/😼코이네코 API/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/🏢Nfinity7/🐈코이네코/😼코이네코 API/"}
 ---
 
 ____
