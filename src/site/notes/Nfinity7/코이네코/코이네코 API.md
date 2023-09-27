@@ -1,13 +1,17 @@
 ---
-{"dg-publish":true,"permalink":"/Nfinity7/코이네코/코이네코 API/"}
+{"dg-publish":true,"permalink":"/Nfinity7/코이네코/코이네코 API/","noteIcon":"emoji//1f63c"}
 ---
 
-____
-# 적용된건 취소선
 
-### ~~데이터셋 받아오기~~
+---
 
-```csharp
+# 안쓰는건 취소선 처리 할 예정
+
+## <span style='color:#8854d0'>초기 API들 (여전히 쓰는것도 있음)</span>
+
+### 데이터셋 받아오기
+
+```cshar
 /* desc:	공용 데이터셋 모두 획득
  * method:	post
  * url:		<http://54.180.106.167:52532/get_common>
@@ -34,19 +38,19 @@ ____
  *		||array_data	|array int	|데이터 배열
  *		||desc		|string		|데이터 설명
  * desc:	모든 텍스트 데이터를 획득
- *		현재 국가 코드는 ko(한글), en(영어) 
+ *		현재 국가 코드는 ko(한글), en(영어)
  */
 ```
 
-### ~~고양이 이름변경~~
+### 고양이 이름변경
 
-```csharp
+```cshar
 /* desc:	캐릭터의 이름 변경
  * method:	post
  * url:		<http://54.180.106.167:52532/set_cat_name>
  *		|name		|type		|desc
  * input:	|uid_u		|string		|이용자의 고유값
- *		|uid_c		|string		|캐릭터의 고유값 
+ *		|uid_c		|string		|캐릭터의 고유값
  *		|name		|string		|변경하고자 하는 고양이 이름
  * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - 그런 고양이 없음, 3: 실패 - update_00
  *		|message	|string		|실패 사유
@@ -57,15 +61,15 @@ ____
  */
 ```
 
-### ~~게시판 가져오기~~
+### 게시판 가져오기
 
-```csharp
+```cshar
 /* desc:	게시판 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_boards>
  *		|name		|type		|desc
  * input:	|type		|int		|게시판의 종류
- *		|count		|int		|가져오는 게시물의 수 
+ *		|count		|int		|가져오는 게시물의 수
  * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - 게시물 없음
  *		|message	|string		|실패 사유
  *		|data		|array json	|
@@ -79,9 +83,9 @@ ____
  */
 ```
 
-### ~~바뀐 로그인~~
+### 바뀐 로그인
 
-```csharp
+```cshar
 /* desc:	계정 정보를 이용해 로그인
  * method:	post
  * url:		<http://54.180.106.167:52531/user_login>
@@ -109,9 +113,9 @@ ____
  */
 ```
 
-### ~~바뀐 고양이 목록~~
+### 바뀐 고양이 목록
 
-```csharp
+```cshar
 /* desc:	유저의 고양이 목록을 받아옴
  * method:	post
  * url:		<http://54.180.106.167:52532/get_cats>
@@ -142,9 +146,9 @@ ____
  */
 ```
 
-### ~~바뀐 고양이 상세정보~~
+### 바뀐 고양이 상세정보
 
-```csharp
+```cshar
 /* desc:	고양이의 상세 정보를 획득
  * method:	post
  * url:		<http://54.180.106.167:52532/get_cat>
@@ -172,9 +176,9 @@ ____
  */
 ```
 
-### ~~다마고치 정보 가져오기~~
+### 다마고치 정보 가져오기
 
-```csharp
+```cshar
 /* desc:	다마고치 정보 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_home>
@@ -191,9 +195,9 @@ ____
  */
 ```
 
-### ~~계정 경험치 테이블 가져오기~~
+### 계정 경험치 테이블 가져오기
 
-```csharp
+```cshar
 /* desc:	계정 경험치 테이블 가져오기
  * method:	post
  * url:		<http://13.124.70.239:52532/get_exp_table>
@@ -208,9 +212,9 @@ ____
  */
 ```
 
-### ~~스킬 포인트를 사용하여 스킬의 레벨을 올리고 관련 정보를 가져오기~~
+### 스킬 포인트를 사용하여 스킬의 레벨을 올리고 관련 정보를 가져오기
 
-```csharp
+```cshar
 /* desc:	스킬 포인트를 사용하여 스킬의 레벨을 올리고 관련 정보를 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_skill>
@@ -230,9 +234,9 @@ ____
  */
 ```
 
-### ~~획득한 경험치를 계정 정보에 반영하고, 반영된 값을 가져오기~~
+### 획득한 경험치를 계정 정보에 반영하고, 반영된 값을 가져오기
 
-```csharp
+```cshar
 /* desc:	획득한 경험치를 계정 정보에 반영하고, 반영된 값을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_exp>
@@ -253,9 +257,9 @@ ____
  */
 ```
 
-### ~~획득한 경험치를 계정 정보에 반영하고, 반영된 값을 가져오기_Ver2~~
+### 획득한 경험치를 계정 정보에 반영하고, 반영된 값을 가져오기\_Ver2
 
-```csharp
+```cshar
 /* desc:	획득한 경험치를 계정 정보에 반영하고, 반영된 값을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_exp_ver2>
@@ -278,9 +282,9 @@ ____
  */
 ```
 
-### ~~달리기 게임에 사용되는 스킬의 레벨 및 증감치를 가져오기 ⇒ 최종 스킬 증감치 가져오기~~
+### 달리기 게임에 사용되는 스킬의 레벨 및 증감치를 가져오기 ⇒ 최종 스킬 증감치 가져오기
 
-```csharp
+```cshar
 /* desc:	달리기 게임에 사용되는 스킬의 레벨 및 증감치를 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_run_skill>
@@ -300,9 +304,9 @@ ____
  */
 ```
 
-### ~~캐릭터의 캐터리 보관 여부를 토글하기~~
+### 캐릭터의 캐터리 보관 여부를 토글하기
 
-```csharp
+```cshar
 /* desc:	캐릭터의 캐터리 보관 여부를 토글하기
  * method:	post
  * url:		<http://54.180.106.167:52532/toggle_home>
@@ -320,9 +324,9 @@ ____
  */
 ```
 
-### ~~다마고치 액션 및 그에 따른 변경점 가져오기~~
+### 다마고치 액션 및 그에 따른 변경점 가져오기
 
-```csharp
+```cshar
 /* desc:	다마고치 액션 및 그에 따른 변경점 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_home_action>
@@ -345,9 +349,9 @@ ____
  */
 ```
 
-### ~~캐릭터의 진화 시도하고 변경된 정보 가져오기~~
+### 캐릭터의 진화 시도하고 변경된 정보 가져오기
 
-```csharp
+```cshar
 /* desc:	캐릭터의 진화 시도하고 변경된 정보 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_evolve>
@@ -368,9 +372,9 @@ ____
  */
 ```
 
-### ~~시즌 스테이지를 시작하고 스테이지 정보 가져오기~~
+### 시즌 스테이지를 시작하고 스테이지 정보 가져오기
 
-```csharp
+```cshar
 /* desc:	시즌 스테이지를 시작하고 스테이지 정보 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_season_begin>
@@ -393,9 +397,9 @@ ____
  */
 ```
 
-### ~~비시즌 스테이지를 시작하고 스테이지 정보 가져오기~~
+### 비시즌 스테이지를 시작하고 스테이지 정보 가져오기
 
-```csharp
+```cshar
 /* desc:	비시즌 스테이지를 시작하고 스테이지 정보 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_normal_begin>
@@ -417,9 +421,9 @@ ____
  */
 ```
 
-### ~~러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기~~
+### 러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
 
-```csharp
+```cshar
 /* desc:	러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
  * method:	post
  * url:		<http://$>{host}:52534/set_game_end
@@ -464,9 +468,9 @@ ____
  */
 ```
 
-### ~~스테이지를 진행하고 있는 중간중간 진행 정보 저장하기~~
+### 스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
 
-```csharp
+```cshar
 /* desc:	스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_game_mid>
@@ -482,9 +486,9 @@ ____
  */
 ```
 
-### ~~현재 사용하지 않는 부화장치들을 가져오기~~
+### 현재 사용하지 않는 부화장치들을 가져오기
 
-```csharp
+```cshar
 /* desc:	현재 사용하지 않는 부화장치들을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_incu_empty>
@@ -501,9 +505,9 @@ ____
  */
 ```
 
-### ~~알 목록을 가져오기~~
+### 알 목록을 가져오기
 
-```csharp
+```cshar
 /* desc:	알 목록을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_eggs>
@@ -525,9 +529,9 @@ ____
  */
 ```
 
-### ~~알로부터 캐릭터를 부화시키고, 해당 캐릭터의 상세 정보를 가져오기~~
+### 알로부터 캐릭터를 부화시키고, 해당 캐릭터의 상세 정보를 가져오기
 
-```csharp
+```cshar
 /* desc:	알로부터 캐릭터를 부화시키고, 해당 캐릭터의 상세 정보를 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_egg_hatch>
@@ -552,9 +556,9 @@ ____
  */
 ```
 
-### ~~스킬 레벨에 따른 증감치 테이블 가져오기~~
+### 스킬 레벨에 따른 증감치 테이블 가져오기
 
-```csharp
+```cshar
 /* desc:        스킬 레벨에 따른 증감치 테이블 가져오기
  * method:      post
  * url:         <http://54.180.106.167:52532/get_skill_table>
@@ -569,9 +573,9 @@ ____
  */
 ```
 
-### ~~리더보드 정보를 획득 (로비에서)~~
+### 리더보드 정보를 획득 (로비에서)
 
-```csharp
+```cshar
 /* desc:	리더 보드 정보를 획득
  * method:	post
  * url:		<http://$>{host}:52532/get_game_ranks
@@ -604,9 +608,9 @@ ____
  */
 ```
 
-### ~~알을 부화기 안에 넣고 해당하는 결과값을 가져오기~~
+### 알을 부화기 안에 넣고 해당하는 결과값을 가져오기
 
-```csharp
+```cshar
 /* desc:	알을 부화기 안에 넣고 해당하는 결과값을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_incu_egg>
@@ -631,9 +635,9 @@ ____
  */
 ```
 
-### ~~데이트시작을 알리고 UID 받아오기~~
+### 데이트시작을 알리고 UID 받아오기
 
-```csharp
+```cshar
 /* desc:	데이트 시작을 알리고 UID 받아오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_date>
@@ -653,16 +657,16 @@ ____
  */
 ```
 
-### ~~데이트 끝을 알리고 알을 받아오기~~
+### 데이트 끝을 알리고 알을 받아오기
 
-```csharp
+```cshar
 /* desc:	데이트 끝을 알리고 알을 받아오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_egg>
  *		|name		|type		|desc
  * input:	|uid_u		|string		|이용자의 고유값
  *		|uid_d		|string		|데이트의 고유값
- * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 그런 데이트 없음, 3: 실패 - update_00, 4: 실패 - insert_00, 5: 실패 - update_01, 6: 실패 - select_01, 7: 실패 - 새끼 안 만들어짐 
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 그런 데이트 없음, 3: 실패 - update_00, 4: 실패 - insert_00, 5: 실패 - update_01, 6: 실패 - select_01, 7: 실패 - 새끼 안 만들어짐
  *		|message	|string		|실패 사유
  *		|data		|json		|
  *		||uid_c		|string		|알의 고유값
@@ -677,9 +681,9 @@ ____
  */
 ```
 
-### ~~상점에서 판매중인 캐시의 목록을 가져오기~~
+### 상점에서 판매중인 캐시의 목록을 가져오기
 
-```csharp
+```cshar
 /* desc:	상점에서 판매중인 캐시의 목록을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_shop_cash>
@@ -696,9 +700,9 @@ ____
  */
 ```
 
-### ~~상점에서 캐시를 구입하고 결과값 가져오기~~
+### 상점에서 캐시를 구입하고 결과값 가져오기
 
-```csharp
+```cshar
 /* desc:	상점에서 캐시를 구입하고 결과값 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_shop_cash>
@@ -715,9 +719,9 @@ ____
  */
 ```
 
-### ~~캐시를 골드로 변환하고 결과값을 가져오기~~
+### 캐시를 골드로 변환하고 결과값을 가져오기
 
-```csharp
+```cshar
 /* desc:	캐시를 골드로 변환하고 결과값을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_cash_to_gold>
@@ -735,9 +739,9 @@ ____
  */
 ```
 
-### ~~알 슬롯 최대 개수를 증가시키고 상응하는 골드를 차감~~
+### 알 슬롯 최대 개수를 증가시키고 상응하는 골드를 차감
 
-```csharp
+```cshar
 /* desc:	알 슬롯 최대 개수를 증가시키고 상응하는 골드를 차감
  * method:	post
  * url:		<http://54.180.106.167:52532/set_egg_max>
@@ -754,9 +758,9 @@ ____
  */
 ```
 
-### ~~캐터리 슬롯 최대 개수를 증가시키고 상응하는 골드드를 차감~~
+### 캐터리 슬롯 최대 개수를 증가시키고 상응하는 골드드를 차감
 
-```csharp
+```cshar
 /* desc:	캐터리 슬롯 최대 개수를 증가시키고 상응하는 골드를 차감
  * method:	post
  * url:		<http://54.180.106.167:52532/set_home_max>
@@ -775,9 +779,9 @@ ____
  */
 ```
 
-### ~~캐릭터의 진화 시도하고 변경된 정보 가져오기~~
+### 캐릭터의 진화 시도하고 변경된 정보 가져오기
 
-```csharp
+```cshar
 /* desc:	캐릭터의 진화 시도하고 변경된 정보 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/set_evolve>
@@ -796,23 +800,23 @@ ____
  */
 ```
 
-### ~~고양이와 이별~~
+### 고양이와 이별
 
-```csharp
+```cshar
 /* desc:	캐릭터와의 이별
  * method:	post
  * url:		<http://54.180.106.167:52532/set_cat_farewell>
  *		|name		|type		|desc
  * input:	|uid_c		|string		|캐릭터의 고유값
  * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - 그런 캐릭터 없거나 seed 캐릭터임, 3: 실패 - update_00
- *		|message	|string		|반환 메세지 
+ *		|message	|string		|반환 메세지
  *		|data		|string		|캐릭터의 고유값
  */
 ```
 
-### ~~새로운 부화기를 구매하고, 현재 빈 부화기의 개수 및 남은 골드를 가져오기~~
+### 새로운 부화기를 구매하고, 현재 빈 부화기의 개수 및 남은 골드를 가져오기
 
-```csharp
+```cshar
 /* desc:	새로운 부화기를 구매하고, 현재 빈 부화기의 개수 및 남은 골드를 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52532/get_incu_new>
@@ -831,9 +835,9 @@ ____
  */
 ```
 
-### ~~런게임에서 탈주~~
+### 런게임에서 탈주
 
-```csharp
+```cshar
 /* desc:	게임에서의 탈주(시즌, 비시즌 공용)
  * method:	post
  * url:		<http://54.180.106.167:52532/set_game_escape>
@@ -850,9 +854,9 @@ ____
 
 ---
 
-### ~~이용자가 보유한 모든 친구 목록을 획득~~
+### 이용자가 보유한 모든 친구 목록을 획득
 
-```csharp
+```cshar
 /* desc:	이용자가 보유한 모든 친구 목록을 획득
  * method:	post
  * url:		<http://$>{host}:52536/get_frnds
@@ -880,9 +884,9 @@ ____
  */
 ```
 
-### ~~친구(친구 신청 상태 포함)를 삭제~~
+### 친구(친구 신청 상태 포함)를 삭제
 
-```csharp
+```cshar
 /* desc:	친구(친구 신청 상태 포함)를 삭제
  * method:	post
  * url:		<http://$>{host}:52536/set_delete
@@ -898,9 +902,9 @@ ____
  */
 ```
 
-### ~~선물을 받는 기능~~
+### 선물을 받는 기능
 
-```csharp
+```cshar
 /* desc:	선물을 받는 기능
  * method:	post
  * url:		<http://$>{host}:52536/set_present_rx
@@ -918,9 +922,9 @@ ____
  */
 ```
 
-### ~~선물을 보내는 기능~~
+### 선물을 보내는 기능
 
-```csharp
+```cshar
 /* desc:	선물을 보내는 기능
  * method:	post
  * url:		<http://$>{host}:52536/set_present_tx
@@ -937,9 +941,9 @@ ____
  */
 ```
 
-### ~~존재하는 친구 신청을 수락하기~~
+### 존재하는 친구 신청을 수락하기
 
-```csharp
+```cshar
 /* desc:	존재하는 친구 신청을 수락하기
  * method:	post
  * url:		<http://$>{host}:52536/set_frnd_accept
@@ -953,9 +957,9 @@ ____
  */
 ```
 
-### ~~친구 코드에 대응되는 이용자에게 친구 신청하기~~
+### 친구 코드에 대응되는 이용자에게 친구 신청하기
 
-```csharp
+```cshar
 /* desc:	친구 코드에 대응되는 이용자에게 친구 신청하기
  * method:	post
  * url:		<http://$>{host}:52536/set_frnd
@@ -971,9 +975,9 @@ ____
  */
 ```
 
-### ~~이용자 고유값을 입력하고 친구 코드를 가져오기~~
+### 이용자 고유값을 입력하고 친구 코드를 가져오기
 
-```csharp
+```cshar
 /* desc:	이용자 고유값을 입력하고 친구 코드를 가져오기
  * method:	post
  * url:		<http://$>{host}:52536/get_frnd_code
@@ -987,15 +991,15 @@ ____
  */
 ```
 
-### ~~메뉴 뱃지 받아오기~~
+### 메뉴 뱃지 받아오기
 
-```csharp
-/* desc:	각 아이콘의 배지를 획득 
+```cshar
+/* desc:	각 아이콘의 배지를 획득
  * method:	post
  * url:		<http://$>{host}:52532/get_badge
  *		|name		|type		|desc
  * input:	|uid_u	        |string		|이용자의 고유값
- * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - 이용자 없음, 3: 실패 - select_01, 4: 실패 - 이벤트 없음, 5: 실패 - select_02, 6: 실패 - 공지 없음, 
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - 이용자 없음, 3: 실패 - select_01, 4: 실패 - 이벤트 없음, 5: 실패 - select_02, 6: 실패 - 공지 없음,
  *		|message	|string		|실패 사유
  *		|data		|json		|
  *		||frnd_has_new	|int		|0: 받은 신청 없음, 1: 받은 신청 있음
@@ -1010,9 +1014,9 @@ ____
  */
 ```
 
-### ~~현재 버전 받아오기~~
+### 현재 버전 받아오기
 
-```csharp
+```cshar
 /* desc:	버전 정보 확인
  * method:	post
  * url:		<http://$>{host}:52531/get_version
@@ -1022,9 +1026,9 @@ ____
  */
 ```
 
-### ~~닉변~~
+### 닉변
 
-```csharp
+```cshar
 /* desc:        계정의 닉네임을 변경
  * method:      post
  * url:         <http://$>{host}:52532/set_nickname
@@ -1042,9 +1046,9 @@ ____
  */
 ```
 
-### ~~게스트 회원가입 & 로그인~~
+### 게스트 회원가입 & 로그인
 
-```csharp
+```cshar
 /* desc:	게스트로 회원가입 및 로그인
  * method:	post
  * url:		<http://$>{host}:52531/guest_login
@@ -1071,9 +1075,9 @@ ____
  */
 ```
 
-### ~~로컬라이징된 텍스트 받아오기~~
+### 로컬라이징된 텍스트 받아오기
 
-```csharp
+```cshar
 /* desc:	로컬라이징을 위한 모든 데이터의 획득
  * method:	post
  * url:		<http://$>{host}:52531/get_local
@@ -1091,9 +1095,9 @@ ____
 
 ```
 
-### ~~국가코드 획득~~
+### 국가코드 획득
 
-```csharp
+```cshar
 /* desc:	국가 코드를 획득
  * method:	post
  * url:		<http://$>{host}:52531/get_country
@@ -1107,15 +1111,15 @@ ____
  */
 ```
 
-### ~~게시판 가져오기v2~~
+### 게시판 가져오기v2
 
-```csharp
+```cshar
 /* desc:	게시판 가져오기
  * method:	post
  * url:		<http://$>{host}:52532/get_boards_v2
  *		|name		|type		|desc
  * input:	|type		|int		|게시판의 종류
- *		|count		|int		|가져오는 게시물의 수 
+ *		|count		|int		|가져오는 게시물의 수
  *              |code_c         |string         |표준 국가 코드(2글자 버전)
  * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - 게시물 없음
  *		|message	|string		|실패 사유
@@ -1132,9 +1136,9 @@ ____
  */
 ```
 
-### ~~시즌 보상 정보와 내 상위 등급 가져오기~~
+### 시즌 보상 정보와 내 상위 등급 가져오기
 
-```csharp
+```cshar
 /* desc:	이번 시즌에서 달성한 입장(?) 정보 가져오기
  * method:	post
  * url:		<http://$>{host}:52532/get_season_rank
@@ -1158,9 +1162,9 @@ ____
  */
 ```
 
-### ~~고양이의 보너스 스탯 등 추가정보 가져오기~~
+### 고양이의 보너스 스탯 등 추가정보 가져오기
 
-```csharp
+```cshar
 /* desc:	캐릭터의 각종 추가 정보를 획득
  * method:	post
  * url:		<http://$>{host}:52532/get_cat_bonus
@@ -1183,10 +1187,261 @@ ____
 
 ---
 
+## ----------------------------------------------
 
-### [런 게임] 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
+## <span style='color:#8854d0'>계정 관련</span>
 
-```csharp
+### 유저 로그인 V3
+
+```cshar
+/* desc:	계정 정보를 이용해 로그인
+ * method:	post
+ * url:		http://${host}:52531/user_login_v3
+ *		|name		|type		|desc
+ * input:       |email		|string		|메일 주소
+ *		|type		|int		|0: 구글 로그인, 1: 이메일 로그인, 2: 애플 로그인, 3: 게스트 로그인
+ *		|password       |string		|비밀번호, 구글 로그인일 시 없어도 됨
+ *		|uid_m		|string		|기기의 고유값
+ *		|is_auto	|int		|0: 자동 로그인 아님, 1: 자동 로그인임
+ * output:	|code		|int		|0: 가입 및 로그인 성공, 1: 이메일 조회 실패, 2: 비밀번호 틀림, 3: 아이디 생성 실패, 4: 계정 생성 결과 조>회 실패, 5: 구글 로그인시 계정 생성 및 로그인 성공
+ *		|data		|json		|
+ *		||uid		|string		|계정 고유값
+ *		||email		|string		|계정 이메일
+ *		||nickname	|string		|닉네임
+ *		||gold		|int		|소지 골드
+ *		||cash		|int		|소지 캐시
+ *		||home_max	|int		|캐터리 최대 보관수
+ *		||egg_max	|int		|알 보유 가능 최대 개수
+ *		||type		|int		|0: 구글 로그인, 1: 이메일 로그인
+ *		||level		|int		|계정의 레벨
+ *		||exp		|int		|계정의 경험치
+ *		||point		|int		|계정의 잔여 스킬 포인트
+ *		||skill		|array int	|계정의 스킬 레벨 배열
+ *		||correction	|array int	|계정의 스킬 레벨 보정치 배열
+ *		|message	|string		|반환 메세지
+ */
+```
+
+### 닉네임 변경 V2
+
+```cshar
+/* desc:	계정의 닉네임을 변경
+ * method:	post
+ * url:		http://${host}:52532/set_nickname_v2
+ *		|name		|type		|desc
+ * input:	|uid_u		|string		|이용자의 고유값
+ *		|nickname	|string		|이용자가 원하는 닉네임
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - select_01, 3: 실패 - 닉네임 이미 존재, 4: 실패 - update_00
+ *		|message	|string		|실패 사유
+ *		|data		|json		|
+ *		||uid_u		|string		|이용자의 고유값
+ *		||nickname	|string		|최종적으로 적용된 닉네임
+ * desc:	계정의 닉네임을 변경함
+ *		단, 변경하고자하는 닉네임이 중복되는지에 대한 여부를 확인
+ *		만약 중복되는 닉네임(특수문자 및 이모지 등 모두 제외된 상태)을 요청했다면 에러 반환
+ */
+```
+
+### 인증코드 확인 및 계정 생성
+
+```cshar
+/* desc:	인증코드 확인 및 해당하는 계정을 생성
+ * method:	post
+ * url:		http://${host}:52531/auth_v2
+ *		|name		|type		|desc
+ * input:	|email		|string		|메일 주소
+ *		|acode		|string		|인증 코드
+ *		|password	|string		|비밀번호
+ * output:	|code		|int		|0: 성공, 1: 인증 실패, 2: 계정 생성 실패, 3: 계정 존재
+ *		|message	|string		|실패 사유
+ *		|data		|json		|
+ *		||uuid		|string		|가입 승인된 uuid
+ *		||email		|string		|가입 승인된 email
+ * desc:	기저장된 인증 데이터를 갱신하고 가입에 사용된 데이터 및 uuid를 반환
+ */
+```
+
+### 미니게임에 사용되는 스킬의 레벨 및 증감치를 가져오기 V2
+
+```cshar
+/* desc:	미니게임에 사용되는 스킬의 레벨 및 증감치를 가져오기
+ * method:	post
+ * url:		http://${host}:52532/get_run_skill_v2
+ *		|name		|type		|desc
+ * input:	|uid_c		|string		|캐릭터의 고유값
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - select_01
+ *		|message	|string		|실패 사유
+ *		|data		|		|
+ *		||arr_merge	|array int	|계정 및 캐릭터의 스킬 레벨 합산 배열
+ *		||arr_value	|array int	|최종 스킬 증감치 배열
+ * desc:	캐릭터 스킬 레벨 + 계정 스킬 레벨 + 돌보기 스킬 레벨의 합산을 반환
+ *		만약 캐릭터가 아직 유년기 상태라면 스킬 레벨은 절반(버림 연산)만 가산됨
+ *		각 스킬은 레벨 1당 2%의 증감치를 적용
+ *		각 스킬의 레벨 최대치는 모두 100으로 동일, 즉 최대 증감치는 200%
+ */
+```
+
+### 로그인을 한 이력이 있는지 확인하고 해당값을 반환
+
+```cshar
+/* desc:	로그인을 한 이력이 있는지 확인하고 해당값을 반환
+ * method:	post
+ * url:		<http://$>{host}:52531/get_is_auto
+ *		|name		|type		|desc
+ * input:	|uid_u		|string		|이용자 고유값
+ *		|uid_m		|string		|기기 고유값
+ * output:	|code		|int		|0: 성공
+ *		|message	|string		|상황 고지
+ *		|data		|json		|-
+ *		||is_auto	|int		|0: 이력 없음, 1: 이력 있음
+ * desc:	1주일 안에 로그인을 하면 갱신되는 자동 로그인 내역 조회
+ *		뭐가 어찌됐건 로그인을 하면 1주일 동안 로그인 이력이 저장됨
+ *		기기 고유값은 클라이언트를 최초에 실행할 때 만들어두고 보내주면 됨
+ */
+```
+
+## ----------------------------------------------
+
+## <span style='color:#8854d0'>고양이 관리 관련</span>
+
+### 새 고양이의 탄생 V2
+
+```cshar
+/* desc:	새 고양이의 탄생
+ * method:	post
+ * url:		http://${host}:52532/get_cat_new_v2
+ *		|name		|type		|desc
+ * input:	|uid		|string		|이용자 고유값
+ *		|cat_status	|int		|0: 알 받기, 1: 유기묘 받기
+ *		|uid_c_dad	|string		|아빠 고양이의 uid, seed 받기라면 없어도 됨
+ *		|uid_c_mom	|string		|엄마 고양이의 uid, seed 받기라면 없어도 됨
+ * output:	|code		|int		|0: 성공, 1: 실패 - insert_00, 2: 실패 - insert_01, 3: 실패 - select_00
+ *		|message 	|string		|실패 사유
+ *		|data	 	|json		|
+ *		||uid		|string		|고양이의 uid
+ *		||uid_u		|string		|현재 주인의 uid
+ *		||uid_c_dad	|string		|아빠 고양이의 uid, seed 고양이일때 null
+ *		||uid_c_mom	|string		|엄마 고양이의 uid, seed 고양이일때 null
+ *		||date_cur	|int		|고양이의 잔여 교배 횟수
+ *		||date_max	|int		|고양이의 최대 교배 횟수
+ *		||name		|string		|고양이의 이름
+ *		||stat_v2	|array		|캐터리에서의 상태값_v2
+ *		||status	|int		|0: 알, 1: 유년, 2: 성년, 3: NFT
+ *		||is_seed	|int		|0: seed 아님, 1: seed 맞음
+ * desc:	새로운 고양이를 창출
+ *		생성되는 고양이는 상태에 따라 유아 및 그 외로 구분됨
+ *		유기묘를 받는다면 부모의 uid는 없어도 되며 cat_status는 1
+ *		교배결과인 알을 받는다면 부모의 uid가 필수이며 cat_status는 0
+ *		stat_v2 는 기존의 5개짜리 stat을 대체하기 위해 추가 및 변경됨
+ */
+```
+
+### 캐릭터의 각종 추가 정보를 획득 V2
+
+```cshar
+/* desc:	캐릭터의 각종 추가 정보를 획득
+ * method:	post
+ * url:		http://${host}:52532/get_cat_bonus_v2
+ *		|name		|type		|desc
+ * input:	|uid_c		|string		|캐릭터의 고유값
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00
+ *		|message	|string		|실패 사유
+ *		|data		|array json	|
+ *		||status	|int		|1: 코네코, 2: 코이네코, 상태에 따라 성장 게이지 표시 판단
+ *		||action_remain	|int		|코네코일 경우 진화를 위해 필요한 추가 돌보기 기능 횟수
+ *		||action_max	|int		|코네코일 경우 진화를 위해 필요한 돌보기 기능 필요치
+ * desc:	v2는 진화에 관련된 요소들만 반환
+ *		진화는 코네코일 경우에만 표시
+ *		게이지는 최대 28의 수치를 가질 수 있음
+ *		만약 action_remain이 5라면 23만큼 채워질 것
+ */
+```
+
+### 캐릭터의 실시간 능력치를 가져오기
+
+```cshar
+/* desc:	캐릭터의 실시간 능력치를 가져오기
+ * method:	post
+ * url:		http://${host}:52532/get_cat_stat_v2
+ *		|name		|type		|desc
+ * input:	|uid_c		|string		|캐릭터의 고유값
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00
+ *		|message	|string		|반환 메세지
+ *		|data		|json		|
+ *		||arr_skill_c	|array int	|캐릭터 능력치
+ *		||arr_skill_u	|array int	|이용자 능력치
+ *		||arr_skill_p	|array int	|돌보기 능력치
+ *		||arr_skill_m	|array int	|능력치 총합
+ *		||arr_skill_v	|array int	|실제 반영되는 능력치
+ * desc:	캐릭터의 현재 능력치를 호출
+ *		단, 캐릭터가 아직 유아체라면 모든 능력치는 절반으로 감산되어 전달됨
+ *		때문에 유아체의 능력치는 아무리 높아도 50을 넘길 수 없음
+ *		이는 계정 스킬 레벨에도 동일하게 적용됨
+ */
+```
+
+### 선택한 욕구 게이지를 만땅으로 채움
+
+```cshar
+/* desc:	선택한 욕구 게이지를 만땅으로 채움
+ * method:	post
+ * url:		http://${host}:52532/set_fast_care_v2
+ *		|name		|type		|desc
+ * input:	|uid_c		|string		|캐릭터의 고유값
+ *		|i_des		|int		|0 ~ 5 욕구 게이지의 인덱스
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00 failed, 2: 실패 - select_01, 3: 실패 - select_02, 4: 실패 - 젤리 부족, 5: 실패 - 이미 만땅, 6: 실패 - update_00, 7: 실패 - update_01
+ *		|message	|string		|실패 사유
+ *		|data		|json		|
+ *		||cash_left	|int		|남은 젤리
+ *		||arr_skill_c	|array int	|캐릭터 능력치
+ *		||arr_skill_u	|array int	|이용자 능력치
+ *		||arr_skill_p	|array int	|돌보기 능력치(실제로 변하는 값)
+ *		||arr_skill_m	|array int	|능력치 총합
+ * desc:	선택한 스탯 게이지를 최대치로 채움
+ *		단, 스탯 게이지의 수치가 99 이하일 때만 호출 가능
+ *		차감되는 젤리의 수는 데이터베이스의 common 17번에 저장됨
+ *		v2 부터 게이지의 수가 6개로 늘어남에 따라 동일하게 반영됨
+ *		유아체인 경우 각 능력치의 값은 버림 연산 기준으로 절반이 됨
+ */
+```
+
+### 다마고치 액션 및 그에 따른 변경점 가져오기
+
+```cshar
+/* desc:	다마고치 액션 및 그에 따른 변경점 가져오기
+ * method:	post
+ * url:		http://${host}:52532/set_home_action_v2
+ *		|name		|type		|desc
+ * input:	|uid_c		|string		|캐릭터의 고유값
+ *		|num_action	|int		|액션의 배열 번호(0~5)
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00, 2: 실패 - select_01, 3: 실패 - select_02, 4: 실패 - 골드 부족, 5: 실패 - update_00, 6: 실패 - 이미 꽉참, 7: 실패 - update_01
+ *		|message	|string		|실패 사유
+ *		|data		|		|
+ *		||uid_u		|string		|이용자의 고유값
+ *		||uid_c		|string		|캐릭터의 고유값
+ *		||now_gold	|int		|이제 남은 골드
+ *		||gold_action	|int		|액션을 수행하는데 소모한 골드
+ *		||arr_skill_c	|array int	|캐릭터 능력치
+ *		||arr_skill_u	|array int	|이용자 능력치
+ *		||arr_skill_p	|array int	|돌보기 능력치(실제로 변하는 값)
+ *		||arr_skill_m	|array int	|능력치 총합
+ *		||evolve_left	|int		|상호작용을 한 이후 진화까지 남은 시간(초)
+ * desc:	다마고치에서 액션을 수행하고, 그 결과를 반환
+ *		각 액션마다 소모되는 재화 이상의 재화를 보유하고 있어야만 함
+ *		지출한 골드 및 계정에 남은 골드를 반환하며, 캐릭터의 마다고치상 능력치 배열을 반환
+ *		캐릭터 + 이용자 + 돌보기 능력치의 합은 100을 넘길 수 없음
+ *		진화는 유아체만 가능하며 한번의 액션당 6시간씩 감소함
+ *		반환되는 evolve_left의 값은 이미 진화했을 시 음수를, 아직 진화하지 않았다면 양수를 반환
+ */
+```
+
+## ----------------------------------------------
+
+## <span style='color:#8854d0'>런게임 관련</span>
+
+### 런 게임 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
+
+```cshar
 /* desc:	[런 게임] 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
  * method:	post
  * url:		<http://$>{host}:52534/set_resurrect
@@ -1207,11 +1462,13 @@ ____
 
 ---
 
-## 두들점프 관련 ⇒ 포트 다름
-___
-### ~~시즌 보상 정보와 내 상위 등급 가져오기(두들)~~
+## ----------------------------------------------
 
-```csharp
+## <span style='color:#8854d0'>두들점프 관련 ⇒ 포트 다름</span>
+
+### 시즌 보상 정보와 내 상위 등급 가져오기(두들)
+
+```cshar
 /* desc:	이번 시즌에서 달성한 입장(?) 정보 가져오기
  * method:	post
  * url:		<http://$>{host}:52532/get_season_rank_doodle
@@ -1235,9 +1492,9 @@ ___
  */
 ```
 
-### ~~시즌 스테이지를 시작하고 스테이지 정보 가져오기(두들)~~
+### 시즌 스테이지를 시작하고 스테이지 정보 가져오기(두들)
 
-```csharp
+```cshar
 /* desc:	시즌 스테이지를 시작하고 스테이지 정보 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52537/set_season_begin>
@@ -1260,9 +1517,9 @@ ___
  */
 ```
 
-### ~~스테이지를 진행하고 있는 중간중간 진행 정보 저장하기(두들)~~
+### 스테이지를 진행하고 있는 중간중간 진행 정보 저장하기(두들)
 
-```csharp
+```cshar
 /* desc:	스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
  * method:	post
  * url:		<http://54.180.106.167:52537/set_game_mid>
@@ -1278,9 +1535,9 @@ ___
  */
 ```
 
-### ~~러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기(두들)~~
+### 러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기(두들)
 
-```csharp
+```cshar
 /* desc:	러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
  * method:	post
  * url:		<http://54.180.106.167:52537/set_game_end>
@@ -1325,9 +1582,9 @@ ___
  */
 ```
 
-### ~~게임에서의 탈주(시즌, 비시즌 공용)(두들)~~
+### 게임에서의 탈주(시즌, 비시즌 공용)(두들)
 
-```csharp
+```cshar
 /* desc:	게임에서의 탈주(시즌, 비시즌 공용)
  * method:	post
  * url:		<http://54.180.106.167:52537/set_game_escape>
@@ -1342,9 +1599,9 @@ ___
  */
 ```
 
-### ~~캐터리에서 두들랭킹 불러오기~~
+### 캐터리에서 두들랭킹 불러오기
 
-```csharp
+```cshar
 /* desc:	리더 보드 정보를 획득
  * method:	post
  * url:		<http://$>{host}:52532/get_game_ranks_doodle
@@ -1377,9 +1634,9 @@ ___
  */
 ```
 
-### [두들 게임] 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
+### 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
 
-```csharp
+```cshar
 /* desc:	[두들 게임] 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
  * method:	post
  * url:		<http://$>{host}:52537/set_resurrect
@@ -1400,11 +1657,13 @@ ___
 
 ---
 
-## 우편기능
-___
-### ~~이용자의 모든 우편을 검색 및 반환~~
+## ----------------------------------------------
 
-```csharp
+## <span style='color:#8854d0'>우편기능</span>
+
+### 이용자의 모든 우편을 검색 및 반환
+
+```cshar
 /* desc:	이용자의 모든 우편을 검색 및 반환
  * method:	post
  * url:		<http://$>{host}:52531/get_posts
@@ -1429,9 +1688,9 @@ ___
  */
 ```
 
-### ~~이용자의 우편을 읽음 처리~~
+### 이용자의 우편을 읽음 처리
 
-```csharp
+```cshar
 /* desc:	이용자의 우편을 읽음 처리
  * method:	post
  * url:		<http://$>{host}:52531/set_post_read
@@ -1444,13 +1703,36 @@ ___
  */
 ```
 
+### 이용자의 우편을 읽음 처리 V2
+
+```cshar
+/* desc:        이용자의 우편을 읽음 처리
+ * method:      post
+ * url:         http://${host}:52531/set_post_read_v2
+ *              |name           |type           |desc
+ * input:       |uid_p          |string         |우편물의 고유값
+ * output:      |code           |int            |0: 성공, 1: 실패 - 그런 우편 없음, 2: 실패 - update_00, 3: 실패 - 그런 우편 없음
+ *              |message        |string         |실패 사유
+ *              |data           |json           |
+ *		||type		|int		|0: 시즌 보상, 1: 점검 보상, etc...
+ *		||reward_type	|int		|0: 젤리, 1: 코인
+ *		||reward_count	|int		|지급된 보상의 개수
+ * desc:        보상을 받아야만 읽음처리가 됨
+ *		보상을 받았다면 우편에 국왕의 도장을 쾅! 찍어줌
+ *		만약 보상을 받지 않았다면 우편함에 항상 떠있을 것
+ *		통상적인 우편의 유효기간은 배포된 시점을 기준으로 1주일
+ */
+```
+
 ---
 
-## 편의성 현질
-___
-### ~~즉시 부화를 실행하고 남은 젤리를 반환~~
+## ----------------------------------------------
 
-```csharp
+## <span style='color:#8854d0'>편의성 현질</span>
+
+### 즉시 부화를 실행하고 남은 젤리를 반환
+
+```cshar
 /* desc:	즉시 부화를 실행하고 남은 젤리를 반환
  * method:	post
  * url:		<http://$>{host}:52532/set_fast_hatch
@@ -1466,9 +1748,9 @@ ___
  */
 ```
 
-### ~~선택한 욕구 게이지(90 이하의)를 만땅으로 채움~~
+### 선택한 욕구 게이지(90 이하의)를 만땅으로 채움
 
-```csharp
+```cshar
 /* desc:	선택한 욕구 게이지(90 이하의)를 만땅으로 채움
  * method:	post
  * url:		<http://$>{host}:52532/set_fast_care
@@ -1486,9 +1768,9 @@ ___
  */
 ```
 
-### ~~광고 보고 부화시간 1시간 단축~~
+### 광고 보고 부화시간 1시간 단축
 
-```csharp
+```cshar
 /* desc:	광고를 보면 부화에 필요한 시간을 1시간 감소시킴
  * method:	post
  * url:		<http://$>{host}:52532/set_incu_ad
@@ -1503,9 +1785,9 @@ ___
  */
 ```
 
-### ~~무료 캐시가 있는지 조회~~
+### 무료 캐시가 있는지 조회
 
-```csharp
+```cshar
 /* desc:	상점에서 획득 가능한 무료 캐시가 있는지 조회
  * method:	post
  * url:		<http://$>{host}:52532/get_shop_free
@@ -1522,9 +1804,9 @@ ___
  */
 ```
 
-### ~~무료 캐시를 획득하고 3시간 세션 설정~~
+### 무료 캐시를 획득하고 3시간 세션 설정
 
-```csharp
+```cshar
 /* desc:	상점에서 무료 캐시를 획득하고 3시간 세션 설정
  * method:	post
  * url:		<http://$>{host}:52532/set_shop_free
@@ -1542,34 +1824,13 @@ ___
 
 ---
 
-## 로그인 관련
-___
-### ~~로그인을 한 이력이 있는지 확인하고 해당값을 반환~~
+## ----------------------------------------------
 
-```csharp
-/* desc:	로그인을 한 이력이 있는지 확인하고 해당값을 반환
- * method:	post
- * url:		<http://$>{host}:52531/get_is_auto
- *		|name		|type		|desc
- * input:	|uid_u		|string		|이용자 고유값
- *		|uid_m		|string		|기기 고유값
- * output:	|code		|int		|0: 성공
- *		|message	|string		|상황 고지
- *		|data		|json		|-
- *		||is_auto	|int		|0: 이력 없음, 1: 이력 있음
- * desc:	1주일 안에 로그인을 하면 갱신되는 자동 로그인 내역 조회
- *		뭐가 어찌됐건 로그인을 하면 1주일 동안 로그인 이력이 저장됨
- *		기기 고유값은 클라이언트를 최초에 실행할 때 만들어두고 보내주면 됨
- */
-```
+## <span style='color:#8854d0'>쿠폰 관련</span>
 
----
+### 쿠폰 그룹의 인덱스를 입력 받고 복수의 쿠폰을 발급받음
 
-## 쿠폰 관련
-
-### ~~쿠폰 그룹의 인덱스를 입력 받고 복수의 쿠폰을 발급받음~~
-
-```csharp
+```cshar
 /* desc:	쿠폰 그룹의 인덱스를 입력 받고 복수의 쿠폰을 발급받음
  * method:	post
  * url:		<http://$>{host}:52538/get_coupons
@@ -1587,9 +1848,9 @@ ___
  */
 ```
 
-### ~~쿠폰 그룹의 인덱스를 입력 받고 하나의 쿠폰을 발급받음~~
+### 쿠폰 그룹의 인덱스를 입력 받고 하나의 쿠폰을 발급받음
 
-```csharp
+```cshar
 /* desc:	쿠폰 그룹의 인덱스를 입력 받고 하나의 쿠폰을 발급받음
  * method:	post
  * url:		<http://$>{host}:52538/get_coupon
@@ -1605,9 +1866,9 @@ ___
  */
 ```
 
-### ~~발급받은 쿠폰을 사용처리하고 해당하는 보상을 지급~~
+### 발급받은 쿠폰을 사용처리하고 해당하는 보상을 지급
 
-```csharp
+```cshar
 /* desc:	발급받은 쿠폰을 사용처리하고 해당하는 보상을 지급
  * method:	post
  * url:		<http://$>{host}:52538/set_coupon
@@ -1627,11 +1888,13 @@ ___
 
 ---
 
-## 네코팡
+## ----------------------------------------------
 
-### ~~시즌 스테이지를 시작하고 스테이지 정보 가져오기~~
+## <span style='color:#8854d0'>네코팡</span>
 
-```csharp
+### 시즌 스테이지를 시작하고 스테이지 정보 가져오기
+
+```cshar
 /* desc:        시즌 스테이지를 시작하고 스테이지 정보 가져오기
  * method:      post
  * url:         <http://$>{host}:52540/set_season_begin
@@ -1654,9 +1917,9 @@ ___
  */
 ```
 
-### ~~스테이지를 진행하고 있는 중간중간 진행 정보 저장하기~~
+### 스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
 
-```csharp
+```cshar
 /* desc:        스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
  * method:      post
  * url:         <http://$>{host}:52540/set_game_mid
@@ -1672,9 +1935,9 @@ ___
  */
 ```
 
-### ~~게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기~~
+### 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
 
-```csharp
+```cshar
 /* desc:        게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
  * method:      post
  * url:         <http://$>{host}:52540/set_game_end
@@ -1719,9 +1982,9 @@ ___
  */
 ```
 
-### ~~게임에서의 탈주(시즌, 비시즌 공용)~~
+### 게임에서의 탈주(시즌, 비시즌 공용)
 
-```csharp
+```cshar
 /* desc:        게임에서의 탈주(시즌, 비시즌 공용)
  * method:      post
  * url:         <http://$>{host}:52540/set_game_escape
@@ -1736,9 +1999,9 @@ ___
  */
 ```
 
-### ~~게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감~~
+### 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
 
-```csharp
+```cshar
 /* desc:        게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
  * method:      post
  * url:         <http://$>{host}:52540/set_resurrect
@@ -1756,9 +2019,9 @@ ___
  */
 ```
 
-### ~~리더 보드 정보를 획득~~
+### 리더 보드 정보를 획득
 
-```csharp
+```cshar
 /* desc:	리더 보드 정보를 획득
  * method:	post
  * url:		<http://$>{host}:52532/get_game_ranks_pang
@@ -1793,7 +2056,7 @@ ___
 
 ### 이번 시즌에서 달성한 입장(?) 정보 가져오기
 
-```csharp
+```cshar
 /* desc:        이번 시즌에서 달성한 입장(?) 정보 가져오기
  * method:      post
  * url:         <http://$>{host}:52532/get_season_rank_pang
@@ -1819,9 +2082,9 @@ ___
 
 ---
 
-### ~~모든 세션을 제거~~
+### 모든 세션을 제거
 
-```csharp
+```cshar
 /* desc:	모든 세션을 제거
  * method:	post
  * url:		<http://$>{host}:52532/del_sessions
@@ -1837,11 +2100,13 @@ ___
 
 ---
 
-## 푸시 알림
+## ----------------------------------------------
 
-### ~~푸시용 토큰 저장 및 갱신~~
+## <span style='color:#8854d0'>푸시 알림</span>
 
-```csharp
+### 푸시용 토큰 저장 및 갱신
+
+```cshar
 /* desc:	푸시용 토큰 저장 및 갱신
  * method:	post
  * url:		<http://$>{host}:52541/set_push_token
@@ -1861,9 +2126,9 @@ ___
  */
 ```
 
-### ~~개인간 푸시 알림이 필요할 때 호출하는 함수~~
+### 개인간 푸시 알림이 필요할 때 호출하는 함수
 
-```csharp
+```cshar
 /* desc:	개인간 푸시 알림이 필요할 때 호출하는 함수
  * method:	post
  * url:		<http://$>{host}:52541/set_push_p2p
@@ -1882,11 +2147,13 @@ ___
 
 ---
 
-## 슈팅 게임 관련
+## ----------------------------------------------
 
-### ~~시즌 스테이지를 시작하고 스테이지 정보 가져오기~~
+## <span style='color:#8854d0'>슈팅 게임 관련</span>
 
-```csharp
+### 시즌 스테이지를 시작하고 스테이지 정보 가져오기
+
+```cshar
 /* desc:	[슈팅게임] 시즌 스테이지를 시작하고 스테이지 정보 가져오기
  * method:	post
  * url:		<http://$>{host}:52542/set_season_begin
@@ -1909,9 +2176,9 @@ ___
  */
 ```
 
-### ~~스테이지를 진행하고 있는 중간중간 진행 정보 저장하기~~
+### 스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
 
-```csharp
+```cshar
 /* desc:	[슈팅게임] 스테이지를 진행하고 있는 중간중간 진행 정보 저장하기
  * method:	post
  * url:		<http://$>{host}:52542/set_game_mid
@@ -1927,9 +2194,9 @@ ___
  */
 ```
 
-### ~~게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기~~
+### 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
 
-```csharp
+```cshar
 /* desc:	[슈팅게임] 러닝 게임이 종료되었음을 알리고 게임 및 계정 정보 등을 가져오기
  * method:	post
  * url:		<http://$>{host}:52542/set_game_end
@@ -1974,9 +2241,9 @@ ___
  */
 ```
 
-### [슈팅게임] 게임에서의 탈주(시즌, 비시즌 공용)
+### 슈팅게임 게임에서의 탈주(시즌, 비시즌 공용)
 
-```csharp
+```cshar
 /* desc:	[슈팅게임] 게임에서의 탈주(시즌, 비시즌 공용)
  * method:	post
  * url:		<http://$>{host}:52542/set_game_escape
@@ -1991,9 +2258,9 @@ ___
  */
 ```
 
-### [슈팅 게임] 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
+### 슈팅 게임 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
 
-```csharp
+```cshar
 /* desc:	[슈팅 게임] 게임 중 부활 기능을 사용하고 필요한 경우 캐시를 차감
  * method:	post
  * url:		<http://$>{host}:52542/set_resurrect
@@ -2012,9 +2279,9 @@ ___
  */
 ```
 
-### [슈팅 게임] 리더 보드 정보를 획득
+### 슈팅 게임 리더 보드 정보를 획득
 
-```csharp
+```cshar
 /* desc:	[슈팅 게임] 리더 보드 정보를 획득
  * method:	post
  * url:		<http://$>{host}:52532/get_game_ranks_shot
@@ -2047,9 +2314,9 @@ ___
  */
 ```
 
-### [슈팅 게임] 이번 시즌에서 달성한 입장(?) 정보 가져오기
+### 슈팅 게임 이번 시즌에서 달성한 입장(?) 정보 가져오기
 
-```csharp
+```cshar
 /* desc:        이번 시즌에서 달성한 입장(?) 정보 가져오기
  * method:      post
  * url:         <http://$>{host}:52532/get_season_rank_shot
@@ -2070,5 +2337,130 @@ ___
  *              ||end_at        |string         |종료 일시
  *              ||name          |string         |시즌 이름, 숫자일 수도 있고 문자일 수도 있고
  * desc:        이번 시즌에서, 현재 시점으로, 받을 수 있는 보상 등을 반환
+ */
+```
+
+## ----------------------------------------------
+## <span style='color:#8854d0'>스킨 관련 → 포트 52543</span> 
+
+### 상점에서 스킨 아이템 목록을 가져오기
+```
+/* desc:	상점에서 스킨 아이템 목록을 가져오기
+ * method:	post
+ * url:		http://${host}:52543/get_skin_packs
+ *		|name		|type		|desc
+ * output:	|code		|int		|0: 성공, 1: 실패 - select_00
+ *		|message	|string		|실패 사유
+ *		|data		|array json	|
+ *		||index		|int		|판매 품목의 고유 번호
+ *		||style		|int		|스킨 꾸러미의 번호(재판매 등도 가능하므로 중복될 수 있음)
+ *		||part		|string		|2진수 비트 정수
+ *		||count		|int		|한정 판매 스킨 판매량/상시 및 코인 전용은 -1
+ *		||supply	|int		|한정 판매 스킨 공급량/상시 및 코인 전용은 -1
+ *		||price		|int		|이 스킨 꾸러미를 사기 위해 필요한 젤리의 양
+ *		||type		|int		|0: 한정, 1: 상시, 2: 코인/무료
+ *		||is_active	|int		|활성화 여부(0: 판매 중지, 1: 판매 중)
+ * desc:	현재 판매중인 스킨의 상점 정보들을 반환
+ *		각 스킨이 가지는 고유한 정보들도 포함되므로 주의 필요
+ *		같은 이유로 상점에서 보여지지 않더라도 해당 아이템들은 디비상에서 삭제 금지
+ *		동일 style에서도 파트별 차이를 둘 가능성이 높기에 스타일과 파트는 분리
+ *		type이 0이라면 상점에 띠지 및 남은 개수를 보여주면 됨
+ */
+```
+
+### 내 스킨 목록 가져오기
+주의: 스킨이 없을때도 성공 케이스
+```
+/* desc:	내 스킨 목록 가져오기
+ * method:	post
+ * url:		http://${host}:52543/get_skins_my
+ *		|name		|type		|desc
+ * input:	|uid_u		|string		|이용자 고유값
+ * output:	|code		|int		|0: 성공(스킨 없음 포함), 1: 실패 - select_00
+ *		|message	|string		|실패 사유
+ *		|data		|		|
+ *		||index		|int		|스킨 파트의 인벤토리상 고유번호
+ *		||uid_c		|string		|캐릭터 고유값(미착용시 null 반환)
+ *		||style		|int		|스킨의 스타일, 분홍 한복 파트인지, 파란 한복 파트인지
+ *		||part		|int		|비트로 구성됨, (등, 몸, 얼굴, 머리, 꼬리) 만약 10이라면 몸과 머리만 포함됨
+ * desc:	내가 가지고 있는 모든 스킨을 반환
+ */
+```
+
+### 내 파트별 스킨 목록 가져오기
+```
+/* desc:	내 파트별 스킨 목록 가져오기
+ * method:	post
+ * url:		http://${host}:52543/get_part_skins_my
+ *		|name		|type		|desc
+ * input:	
+ *      |uid_u		|string		|이용자 고유값
+ * 		|part		|int		|비트로 구성됨, (등, 몸, 얼굴, 머리, 꼬리) 만약 10이라면 몸과 머리만 포함됨
+ * 		|is_equip	|int		|0: 착용 여부 관계 없이 모두, 1: 착용 상태인 것만, 2: 미착용 상태인 것만
+ * output:	|code		|int		|0: 성공(스킨 없음 포함), 1: 실패 - select_00
+ *		|message	|string		|실패 사유
+ *		|data		|		|
+ *		||index		|int		|스킨 파트의 인벤토리상 고유번호
+ *		||uid_c		|string		|캐릭터 고유값(미착용시 null 반환)
+ *		||style		|int		|스킨의 스타일, 분홍 한복 파트인지, 파란 한복 파트인지
+ *		||part		|int		|비트로 구성됨, (등, 몸, 얼굴, 머리, 꼬리) 만약 10이라면 몸과 머리만 포함됨
+ * desc:	파트별로 내가 가지고 있는 스킨들을 표시해줌
+ * 		조건에 따라 착용 여부에 대한 반환값이 달라지므로 참고
+ */
+```
+
+### 캐릭터가 착용 중인 스킨 가져오기
+```
+/* desc:	캐릭터가 착용 중인 스킨 가져오기
+ * method:	post
+ * url:		http://${host}:52543/get_skins_cat
+ *		|name		|type		|desc
+ * input:	|uid_c		|string		|캐릭터 고유값
+ * output:	|code		|int		|0: 성공(스킨 없음 포함), 1: 실패 - select_00
+ *		|message	|string		|실패 사유
+ *		|data		|array_json	|
+ *		||index		|int		|스킨 파트의 고유번호
+ *		||style		|int		|스킨의 스타일, 분홍 한복 파트인지, 파란 한복 파트인지
+ *		||part		|int		|비트로 구성됨, (등, 몸, 얼굴, 머리, 꼬리) 만약 10이라면 몸과 머리만 포함됨
+ * desc:	index는 아이템으로써의 고유값
+ * 		style은 해당 아이템이 어떤 종류의 스킨인지를 알려주고 part는 그 중에서도 어떤 부위인지를 알려줌
+ */
+```
+
+### 캐릭터에 대한 스킨을 탈착하기
+```
+/* desc:	캐릭터에 대한 스킨을 탈착하기
+ * method:	post
+ * url:		http://${host}:52543/toggle_skin_equip
+ *		|name		|type		|desc
+ * input:	|uid_c		|string/int	|캐릭터 고유값(장비 해제를 원한다면 -1)
+ * 		|skin_index	|int		|스킨 파트의 인벤토리상 고유번호
+ * output:	|code		|int		|0: 성공(스킨 없음 포함), 1: 실패 - update_00
+ *		|message	|string		|실패 사유
+ *		|data		|		|뭐 없음
+ * desc:	캐릭터에 대한 스킨 착용을 바란다면 uid_c 는 캐릭터의 고유값
+ * 		캐릭터에 대한 스킨 해제를 바란다면 uid_c 는 -1
+ * 		skin_index 는 다른 기능에서의 index와 동일한 의미로 동작
+ */
+```
+
+### 상점으로부터 스킨 꾸러미 구매
+```
+/* desc:	상점으로부터 스킨 꾸러미 구매
+ * method:	post
+ * url:		http://${host}:52543/buy_skin_pack
+ *		|name		|type		|desc
+ * input:	|uid_u		|string		|이용자 고유값
+ *		|shop_index	|int		|상점 스킨 꾸러미 고유번호
+ * output:	|code		|int		|0: 성공(스킨 없음 포함), 1: 실패 - select_00, 2: 실패 - select_01 혹은 돈 없음, 3: 실패 - insert_00, 4: >실패 - update_00
+ *		|message	|string		|실패 사유
+ *		|data		|json		|뭐 없음
+ *		||cash		|int		|남은 캐시
+ *		||gold		|int		|남은 코인
+ *		||arr_bought	|array json	|
+ *		|||style	|int		|스킨의 스타일, 분홍 한복 파트인지, 파란 한복 파트인지
+ *		|||part		|int		|비트로 구성됨, (등, 몸, 얼굴, 머리, 꼬리)
+ * desc:	한정판 스킨을 구매하고 남은 상품 수 및 이용자의 캐시를 차감
+ *		획득한 스킨은 arr_bought의 style 및 part를 통해 구분 가능
  */
 ```
