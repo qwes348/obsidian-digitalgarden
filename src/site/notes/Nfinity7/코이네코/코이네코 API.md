@@ -1,9 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/Nfinity7/코이네코/코이네코 API/","noteIcon":"emoji//1f63c"}
+{"dg-publish":true,"permalink":"/Nfinity7/코이네코/코이네코 API/","tags":["gardenEntry"],"noteIcon":"emoji//1f63c"}
 ---
 
 
 ---
+[[Nfinity7/코이네코/코이네코 메모\|코이네코 메모]]
 
 # 안쓰는건 취소선 처리 할 예정
 
